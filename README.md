@@ -2,27 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### My page todo-list-react
+## My page todo-list-react
 
 ![Marta-todo-list-react](https://github.com/martaCharlie/todo-list-react/blob/main/public/print%20screen.png?raw=true)
 
-#### Demo
+### Demo
 
 https://martacharlie.github.io/todo-list-react/
 
-##### Technologies:
+#### Technologies:
 
 - HTML
 - CSS
@@ -31,3 +19,15 @@ https://martacharlie.github.io/todo-list-react/
 - Create React App
 - webpack
 - Babel
+
+##### Available Scripts
+
+In the project directory, you can run:
+
+###### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
