@@ -12,7 +12,7 @@ export const Item = styled.li`
   grid-gap: 10px;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid ${({ theme }) => theme.color.grayish};
   /* Keyword values */
   word-break: break-word;
   /* deprecated */
@@ -21,5 +21,42 @@ export const Item = styled.li`
     hidden &&
     css`
       display: none;
+    `}
+`;
+
+export const Content = styled.span`
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
+`;
+
+export const Button = styled.button`
+  border: none;
+  color: ${({ theme }) => theme.color.white};
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  transition: filter 0.3s;
+
+  ${({ toggleDone }) =>
+    toggleDone &&
+    css`
+      background: ${({ theme }) => theme.color.forestGreen};
+
+      &:hover {
+        filter: brightness(120%);
+      }
+    `}
+
+  ${({ remove }) =>
+    remove &&
+    css`
+      background: ${({ theme }) => theme.color.crimson};
+
+      &:hover {
+        filter: brightness(120%);
+      }
     `}
 `;
