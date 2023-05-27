@@ -5,3 +5,9 @@ export const StyledContainer = styled.main`
   padding: 20px;
   margin: 0 auto;
 `;
+
+const Container = ({ children }) => (
+  <StyledContainer>{children}</StyledContainer>
+);
+
+export default Container;
