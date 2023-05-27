@@ -12,5 +12,9 @@ html {
 body {
   font-family: 'Monserrat', sans-serif;
   background: ${({ theme }) => theme.color.gallery};
+
+  button {
+    cursor: pointer;
+  }
 }
 `;
