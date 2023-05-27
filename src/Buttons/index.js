@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, StyledButton } from "./styled";
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
