@@ -28,7 +28,8 @@ export const StyledButton = styled.button`
     color: ${({ theme }) => theme.color.gray};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoint.mobileFeature}) {
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileFeature}px) {
+    flex-wrap: wrap;
     align-self: center;
     flex-basis: 100%;
   }
