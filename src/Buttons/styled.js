@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Button = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: grid;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileFeature}px) {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: grid;
   }
 `;
 
