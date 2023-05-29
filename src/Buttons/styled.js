@@ -3,11 +3,9 @@ import styled from "styled-components";
 export const Button = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: grid;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.mobileFeature}px) {
     justify-content: center;
-    flex-direction: grid;
   }
 `;
 
