@@ -4,7 +4,7 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import { StyledContainer } from "./Container/styled";
+import Container from "./Container";
 import { useTasks } from "./useTasks";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     useTasks();
 
   return (
-    <StyledContainer>
+    <Container>
       <Header title="Lista zadań" />
       <Section title="Dodaj zadanie" body={<Form addNewTask={addNewTask} />} />
       <Section
@@ -40,7 +40,7 @@ function App() {
           />
         }
       />
-    </StyledContainer>
+    </Container>
   );
 }
 
